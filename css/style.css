@@ -13,15 +13,16 @@
 }
 
 body {
+	/*не забудь включить!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 	background: #191411;
 	font-family: "Gilroy", sans-serif;
 	color: #fff;
 }
 
 .wrapper {
-	background: url("../images/background.svg") top center no-repeat;
-	overflow: hidden;
-	height: 100vh;
+	background: url("../images/main_bg.png") top center no-repeat;
+	/*overflow: hidden;*/
+	/*height: 100vh;*/
 }
 
 .header {
@@ -53,7 +54,12 @@ body {
 	cursor: pointer;
 }
 
+.header__item {
+	padding-bottom: 2px;
+}
+
 .header__item:hover {
+	padding-bottom: 0;
 	border-bottom: 2px solid #ffffff;
 }
 
@@ -68,9 +74,11 @@ body {
 	user-select: none;
 	padding: 11px;
 }
+
 .main {
 	margin-top: 103px;
 }
+
 .main__main-info {
 	display: flex;
 	flex-direction: column;
@@ -95,11 +103,14 @@ body {
 }
 
 .main__text {
-	font-size: 24px;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 140%;
 }
 
-.main__text_margin-top-bot {
+.main__text_margin-top-bot-fz-24 {
 	margin: 56px 0;
+	font-size: 24px;
 }
 
 .main__btn {
@@ -127,3 +138,183 @@ body {
 	top: -141px;
 	left: 261px;
 }
+
+.main__why {
+	margin-top: 188px;
+	background: url("../images/why-bg.png") top center no-repeat;
+}
+
+.main__why-container {
+	flex-direction: column;
+}
+
+.main__h2 {
+	font-family: "Merriweather", sans-serif;
+	font-weight: 900;
+	font-size: 64px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 60px;
+}
+
+.main__why-items {
+	display: flex;
+	gap: 100px;
+}
+
+.main__why-item {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+	text-align: center;
+	align-items: center;
+	max-width: 312px;
+}
+
+.main__img-icon {
+	max-width: 100px;
+}
+
+.main__h4 {
+	font-weight: 600;
+	font-size: 24px;
+}
+
+
+.main__select-burger {
+	margin-top: 161px;
+	background: url("../images/bg-select-burger.png") top center;
+	background-size: 1400px;
+}
+
+.main__burger-cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+}
+
+.main__burger-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 24px;
+	max-width: 384px;
+	border: 1px solid #353535;
+	border-radius: 16px;
+	padding: 30px 30px 10px 30px;
+	background: #211A16;
+}
+
+.main__select-burger-img {
+	max-width: 354px;
+	max-height: 280px;
+}
+
+.main__buy-burger-block {
+	display: flex;
+	justify-content: space-between;
+}
+
+.main__price-and-weight {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.main__price {
+	font-weight: 600;
+	font-size: 32px;
+}
+
+.main__weight {
+	font-weight: 300;
+	font-size: 16px;
+	color: #757575;
+}
+
+.main__btn_burger-card {
+	width: 182px;
+	height: 62px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+}
+
+.main__order-placement {
+	margin-top: 180px;
+	background: url("../images/order_bg.png") top center no-repeat;
+}
+
+.container__main__order-placement {
+	flex-direction: column;
+}
+
+.main__order-placement-block {
+	position: relative;
+	display: flex;
+	align-items: center;
+
+}
+
+.main__burger-in-box-img {
+	position: absolute;
+	top: -157px;
+	left: -277px;
+	z-index: -1;
+}
+
+.main__form {
+	max-width: 424px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	background: #211A16;
+	padding: 60px 40px;
+	border: 1px solid #353535;
+	border-radius: 16px;
+	margin-left: 674px;
+}
+
+.main__div-input {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(95.61deg, #da8023 0%, #e2b438 100%);
+	border-radius: 8px;
+	height: 62px;
+	width: 344px;
+}
+
+.main__input {
+	border: none;
+	height: 60px;
+	width: 342px;
+	padding: 20px 10px;
+	background: #211A16;
+	border-radius: 8px;
+	color: #ffffff;
+}
+
+.main__btn_order-placement {
+	width: 100%;
+}
+
+.container__footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 255px 0 77px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
