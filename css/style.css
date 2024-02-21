@@ -64,6 +64,9 @@ body {
 }
 
 .header__currency {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	border: 1px solid #fff;
 	border-radius: 5px;
 	width: 45px;
